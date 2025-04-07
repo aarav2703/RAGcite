@@ -22,8 +22,6 @@ Below is a screenshot of RAGcite in action:
 
 ![RAGcite Screenshot](docs/demo.png)
 
-> **Note on using images in your README:**  
->
 
 ---
 
