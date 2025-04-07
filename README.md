@@ -1,6 +1,3 @@
-Below is a revised version of your README file with some formatting improvements and an added section demonstrating how to include images.
-
----
 
 ```markdown
 # RAGcite: Research Collaboration Recommender
