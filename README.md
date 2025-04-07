@@ -1,5 +1,5 @@
 
-```markdown
+
 # RAGcite: Research Collaboration Recommender
 
 RAGcite is a personalized research assistant built with Streamlit that helps graduate students discover relevant research papers and contact potential collaborators. It uses arXiv's open API and integrates Retrieval-Augmented Generation (RAG) with DeepSeek V3 to recommend papers and generate cold emails to professors.
@@ -149,5 +149,5 @@ Made by Aarav Kalkar
 🔗 [LinkedIn](https://linkedin.com/in/aaravkalkar)
 ```
 
----
+
 
