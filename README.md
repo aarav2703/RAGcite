@@ -23,7 +23,7 @@ Below is a screenshot of RAGcite in action:
 ![RAGcite Screenshot](docs/demo.png)
 
 > **Note on using images in your README:**  
-> You can include images using the syntax `![Alt Text](path/to/image)`. The path can be relative (e.g., `docs/demo.png`) or an absolute URL.
+>
 
 ---
 
@@ -59,13 +59,13 @@ pip install -r requirements.txt
 
 ### 3. Add Your DeepSeek API Key
 
-Create a `.env` file in the root directory:
+Create the `.env` file in the root directory:
 
 ```
 DEEPSEEK_API_KEY=your_deepseek_api_key_here
 ```
 
-> Get your free DeepSeek API key from [DeepSeek Platform](https://platform.deepseek.com).
+> Get your  DeepSeek API key from [DeepSeek Platform](https://platform.deepseek.com).-Same key for both Reasoning and V3 models
 
 ### 4. Run the App
 
@@ -109,29 +109,7 @@ RAGcite/
     └── email_generator.py    # Cold email generation logic
 ```
 
----
 
-## 🖼️ How to Use Images in the README
-
-To embed images, use the Markdown image syntax:
-
-```markdown
-![Alternative Text](path/to/image)
-```
-
-- **Example using a local image:**  
-  ```markdown
-  ![Demo Screenshot](docs/demo.png)
-  ```
-
-- **Example using an online image:**  
-  ```markdown
-  ![Online Image](https://example.com/image.png)
-  ```
-
-Ensure that the path is correct relative to your README file or is a valid URL.
-
----
 
 ## 🤝 Acknowledgements
 
