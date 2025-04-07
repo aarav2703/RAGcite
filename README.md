@@ -1,6 +1,9 @@
+Below is a revised version of your README file with some formatting improvements and an added section demonstrating how to include images.
+
+---
 
 ```markdown
-# 📚 RAGcite: Research Collaboration Recommender
+# RAGcite: Research Collaboration Recommender
 
 RAGcite is a personalized research assistant built with Streamlit that helps graduate students discover relevant research papers and contact potential collaborators. It uses arXiv's open API and integrates Retrieval-Augmented Generation (RAG) with DeepSeek V3 to recommend papers and generate cold emails to professors.
 
@@ -8,43 +11,48 @@ RAGcite is a personalized research assistant built with Streamlit that helps gra
 
 ## 🚀 Features
 
-- 🔍 **Semantic Paper Search**: Paste your research idea or thesis abstract, and find top-matching papers from arXiv.
-- 🤖 **RAG-Powered Recommendations**: Combines sentence embeddings with FAISS to find relevant literature based on meaning, not just keywords.
-- 📬 **Cold Email Generator**: Uses DeepSeek V3 to create polite, personalized outreach emails to professors or authors.
-- 🧠 **Built-in Personalization**: Add your name, university, and contact info for automatic inclusion in generated emails.
-- ⚙️ **Customizable Filters**: Choose how many papers to fetch and whether to include emails or not.
+- **Semantic Paper Search**: Paste your research idea or thesis abstract to find top-matching papers from arXiv.
+- **RAG-Powered Recommendations**: Combines sentence embeddings with FAISS to find relevant literature based on meaning, not just keywords.
+- **Cold Email Generator**: Uses DeepSeek V3 to create polite, personalized outreach emails to professors or authors.
+- **Built-in Personalization**: Automatically includes your name, university, and contact information in generated emails.
+- **Customizable Filters**: Choose how many papers to fetch and whether to include emails or not.
 
 ---
 
 ## 🖼️ Demo
 
-![RAGcite Screenshot](docs/demo.png) <!-- (Add an actual screenshot if desired) -->
+Below is a screenshot of RAGcite in action:
+
+![RAGcite Screenshot](docs/demo.png)
+
+> **Note on using images in your README:**  
+> You can include images using the syntax `![Alt Text](path/to/image)`. The path can be relative (e.g., `docs/demo.png`) or an absolute URL.
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Component     | Technology           |
-|---------------|----------------------|
-| UI            | Streamlit            |
-| NLP Embeddings| Sentence Transformers (`all-MiniLM-L6-v2`) |
-| Search        | FAISS Vector DB      |
-| API Integration | arXiv API + DeepSeek V3 |
-| LLM           | DeepSeek V3 (`deepseek-chat`) |
-| Backend Logic | Python               |
+| Component          | Technology                                   |
+|--------------------|----------------------------------------------|
+| **UI**             | Streamlit                                    |
+| **NLP Embeddings** | Sentence Transformers (`all-MiniLM-L6-v2`)   |
+| **Search**         | FAISS Vector DB                              |
+| **API Integration**| arXiv API + DeepSeek V3                        |
+| **LLM**            | DeepSeek V3 (`deepseek-chat`)                |
+| **Backend Logic**  | Python                                       |
 
 ---
 
 ## 📦 Installation
 
-### 1. Clone the repo
+### 1. Clone the Repo
 
 ```bash
 git clone https://github.com/aarav2703/RAGcite.git
 cd RAGcite
 ```
 
-### 2. Set up environment
+### 2. Set Up Environment
 
 ```bash
 conda create -n ragcite python=3.10
@@ -52,7 +60,7 @@ conda activate ragcite
 pip install -r requirements.txt
 ```
 
-### 3. Add your DeepSeek API key
+### 3. Add Your DeepSeek API Key
 
 Create a `.env` file in the root directory:
 
@@ -60,28 +68,26 @@ Create a `.env` file in the root directory:
 DEEPSEEK_API_KEY=your_deepseek_api_key_here
 ```
 
-> You can get your free DeepSeek API key from [https://platform.deepseek.com](https://platform.deepseek.com)
+> Get your free DeepSeek API key from [DeepSeek Platform](https://platform.deepseek.com).
 
----
-
-### 4. Run the app
+### 4. Run the App
 
 ```bash
 streamlit run streamlit_app.py
 ```
 
-Then open your browser:  
-🔗 [http://localhost:8501](http://localhost:8501)
+Then open your browser and navigate to:  
+[http://localhost:8501](http://localhost:8501)
 
 ---
 
 ## ✨ Example Use Case
 
-> A grad student researching "transformer-based knowledge distillation for low-resource NLP" can paste their abstract and immediately:
->
-> - See 10 semantically similar papers from arXiv
-> - Read summaries, visit PDF links
-> - Generate a cold email to the first author of each paper, personalized with their own details
+A grad student researching "transformer-based knowledge distillation for low-resource NLP" can:
+
+- Paste their abstract to view 10 semantically similar papers from arXiv.
+- Read summaries and visit PDF links.
+- Generate personalized cold emails to the first author of each paper.
 
 ---
 
@@ -102,9 +108,31 @@ RAGcite/
 │   ├── deepseek_client.py    # DeepSeek V3 generation client
 │   └── vector_store.py       # Embedding + FAISS search
 │
-├── emails/
-│   └── email_generator.py    # Cold email generation logic
+└── emails/
+    └── email_generator.py    # Cold email generation logic
 ```
+
+---
+
+## 🖼️ How to Use Images in the README
+
+To embed images, use the Markdown image syntax:
+
+```markdown
+![Alternative Text](path/to/image)
+```
+
+- **Example using a local image:**  
+  ```markdown
+  ![Demo Screenshot](docs/demo.png)
+  ```
+
+- **Example using an online image:**  
+  ```markdown
+  ![Online Image](https://example.com/image.png)
+  ```
+
+Ensure that the path is correct relative to your README file or is a valid URL.
 
 ---
 
@@ -119,11 +147,10 @@ RAGcite/
 
 ## 📬 Contact
 
-Built with ❤️ by Aarav Kalkar  
+Made by Aarav Kalkar  
 📧 [kalka046@umn.edu](mailto:kalka046@umn.edu)  
-🔗 [linkedin.com/in/aaravkalkar](https://linkedin.com/in/aaravkalkar)
-
+🔗 [LinkedIn](https://linkedin.com/in/aaravkalkar)
 ```
 
-
+---
 
