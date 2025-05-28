@@ -63,7 +63,7 @@ Create the `.env` file in the root directory:
 DEEPSEEK_API_KEY=your_deepseek_api_key_here
 ```
 
-> Get your  DeepSeek API key from [DeepSeek Platform](https://platform.deepseek.com).-Same key for both Reasoning and V3 models
+> Get your own  DeepSeek API key from [DeepSeek Platform](https://platform.deepseek.com).-Same key for both Reasoning and V3 models
 
 ### 4. Run the App
 
@@ -93,7 +93,7 @@ RAGcite/
 │
 ├── streamlit_app.py          # Main Streamlit app
 ├── requirements.txt
-├── .env                      # Stores your DeepSeek API key (not committed)
+├── .env                      # Stores the DeepSeek API key .env wwill have to be created
 │
 ├── arxiv/
 │   ├── arxiv_api.py          # arXiv query functions
